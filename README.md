@@ -67,8 +67,8 @@ A powerful, modern web application built with Next.js 15, TypeScript, and Google
 
 1. **Clone the repository**
 ```bash
-git clone <your-repo-url>
-cd google-map
+git clone https://github.com/lyhou123/Googlemap-Nextjs.git
+cd Googlemap-Nextjs
 ```
 
 2. **Install dependencies**
@@ -115,81 +115,5 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 - **Data Export**: Click "Export Data" to download your saved locations
 - **Current Location**: Use "Current Location" button to center map on your position
 
-## 🏗️ Project Structure
-
-```
-├── app/
-│   ├── layout.tsx          # Root layout with Google Maps provider
-│   ├── page.tsx            # Main application page
-│   └── globals.css         # Global styles
-├── components/
-│   ├── ui/                 # Shadcn/ui components
-│   ├── google-maps-provider.tsx  # Google Maps API provider
-│   ├── google-map.tsx      # Main map component
-│   ├── places-search.tsx   # Search functionality
-│   ├── map-controls.tsx    # Map control panel
-│   ├── places-list.tsx     # Nearby places display
-│   └── saved-locations.tsx # Saved locations management
-├── lib/
-│   └── utils.ts            # Utility functions
-└── public/                 # Static assets
-```
-
-## 🔧 Customization
-
-### Adding New Map Features
-1. Extend the `GoogleMap` component in `components/google-map.tsx`
-2. Add new props and handlers as needed
-3. Update the main page to use new features
-
-### Styling Customization
-- Modify Tailwind classes in components
-- Update `globals.css` for global styles
-- Customize Shadcn/ui components in `components/ui/`
-
-### API Integration
-- Add new Google Maps API features in the map component
-- Extend the provider for additional API loading management
-
-## 📊 Performance Optimizations
-
-- **Lazy Loading**: Google Maps API is loaded dynamically
-- **Component Optimization**: Uses React.memo and useCallback for performance
-- **Efficient Re-renders**: Optimized state management to minimize re-renders
-- **Bundle Optimization**: Next.js automatic code splitting
-
-## 🔒 Security Considerations
-
-- **API Key Restriction**: Restrict your Google Maps API key to your domain
-- **Environment Variables**: Never commit API keys to version control
-- **HTTPS**: Use HTTPS in production for Geolocation API
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Google Maps Platform](https://developers.google.com/maps) for the mapping APIs
-- [Shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
-- [Next.js](https://nextjs.org/) for the amazing React framework
-- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
-
-## 📞 Support
-
-If you have any questions or issues, please:
-1. Check the existing [Issues](https://github.com/your-repo/issues)
-2. Create a new issue with detailed information
-3. Include steps to reproduce any bugs
-
----
 
 Made with ❤️ using Next.js and Google Maps API
